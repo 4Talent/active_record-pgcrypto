@@ -12,4 +12,6 @@ RSpec.describe User do
     expect(filtered.count).to eq(1)
     expect(filtered.first).to eq(good_user)
   end
+
+  it { expect(good_user.reload).not_to be_changed }
 end
