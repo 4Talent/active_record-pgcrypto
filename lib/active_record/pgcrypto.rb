@@ -12,6 +12,7 @@ module ActiveRecord
     #
     # @return [NilClass]
     def self.enable_log_subscriber!
+      puts "HOLAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
       ::ActiveRecord::LogSubscriber.prepend(LogSubscriber)
     end
   end
